@@ -1,0 +1,198 @@
+[
+  {
+    "ContainingType": "SAAcademiaMatriculas_Api_Servicios.Controllers.AcademiaController",
+    "Method": "ConsultarEstudiantes",
+    "RelativePath": "Academia/ConsultarEstudiantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SAAcademiaMatriculas_Lib_Servicios.Entidades.Estudiantes, SAAcademiaMatriculas_Lib_Servicios, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SAAcademiaMatriculas_Api_Servicios.Controllers.AcademiaController",
+    "Method": "ConsultarMatricula",
+    "RelativePath": "Academia/ConsultarMatricula",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SAAcademiaMatriculas_Lib_Servicios.Entidades.Matriculas, SAAcademiaMatriculas_Lib_Servicios, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SAAcademiaMatriculas_Api_Servicios.Controllers.AcademiaController",
+    "Method": "EliminarEstudiante",
+    "RelativePath": "Academia/EliminarEstudiante",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Estudiantes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Estudiantes",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SAAcademiaMatriculas_Api_Servicios.Controllers.AcademiaController",
+    "Method": "EliminarMatricula",
+    "RelativePath": "Academia/EliminarMatricula",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Matriculas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Matriculas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SAAcademiaMatriculas_Api_Servicios.Controllers.AcademiaController",
+    "Method": "GuardarEstudiante",
+    "RelativePath": "Academia/GuardarEstudiante",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Estudiantes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Estudiantes",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SAAcademiaMatriculas_Api_Servicios.Controllers.AcademiaController",
+    "Method": "GuardarMatricula",
+    "RelativePath": "Academia/GuardarMatricula",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Matriculas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Matriculas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SAAcademiaMatriculas_Api_Servicios.Controllers.AcademiaController",
+    "Method": "ModificarEstudiante",
+    "RelativePath": "Academia/ModificarEstudiante",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Estudiantes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Estudiantes",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "SAAcademiaMatriculas_Api_Servicios.Controllers.AcademiaController",
+    "Method": "ModificarMatricula",
+    "RelativePath": "Academia/ModificarMatricula",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entidad",
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Matriculas",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SAAcademiaMatriculas_Lib_Servicios.Entidades.Matriculas",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

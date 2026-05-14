@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "SAAcademiaMatriculas_Api_Servicios\\SAAcademiaMatriculas_Api_Servicios.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "SAAcademiaMatriculas_Api_Pres\\SAAcademiaMatriculas_Api_Pres.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
