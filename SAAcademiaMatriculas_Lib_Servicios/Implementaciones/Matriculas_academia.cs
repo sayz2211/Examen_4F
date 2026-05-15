@@ -97,8 +97,13 @@ namespace SAAcademiaMatriculas_Lib_Servicios.Implementaciones
             int inscritos = ContarInscritosPorSalon(entidad.Nombre);
 
             entidad.Costo = AplicarDescuentos(entidad, inscritos);
-
             this.iConexion.Matriculas!.Add(entidad);
+            this.iConexion.SaveChanges();
+            var auditoria = new Auditorias();
+            auditoria.Nombre = "Guardar";
+            auditoria.Fecha = DateTime.Now;
+            auditoria.Descripcion = "Se guardó matrícula";
+            this.iConexion.Auditorias!.Add(auditoria);
             this.iConexion.SaveChanges();
             return entidad;
         }
@@ -122,7 +127,7 @@ namespace SAAcademiaMatriculas_Lib_Servicios.Implementaciones
                 var auditoria = new Auditorias();
                 auditoria.Nombre = "Modificar";
                 auditoria.Fecha = DateTime.Now;
-                auditoria.Descripcion = "Se modificó matrícula Id:{entidad.Id}, salón '{entidad.Nombre}', costo final:{entidad.Costo}";
+                auditoria.Descripcion = "Se modificó matrícula ";
                 this.iConexion.Auditorias!.Add(auditoria);
 
                 this.iConexion.SaveChanges();
@@ -142,7 +147,7 @@ namespace SAAcademiaMatriculas_Lib_Servicios.Implementaciones
                 var auditoria = new Auditorias();
                 auditoria.Nombre = "Eliminar";
                 auditoria.Fecha = DateTime.Now;
-                auditoria.Descripcion = "Se eliminó matrícula Id:{entidad.Id} del salón '{entidad.Nombre}'";
+                auditoria.Descripcion = "Se eliminó matrícula '";
                 this.iConexion.Auditorias!.Add(auditoria);
 
                 this.iConexion.SaveChanges();
