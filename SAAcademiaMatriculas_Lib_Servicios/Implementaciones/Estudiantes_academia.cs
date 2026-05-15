@@ -62,7 +62,7 @@ namespace SAAcademiaMatriculas_Lib_Servicios.Implementaciones
             var audit = new Auditorias();
             audit.Nombre = "Modificar Estudiante";
             audit.Fecha = DateTime.Now;
-            audit.Descripcion = "Se modificaron datos del estudiante Id: {entidad.Id} ({entidad.Nombre})";
+            audit.Descripcion = "Se modificaron datos del estudiante )";
             this.iConexion.Auditorias!.Add(audit);
 
             this.iConexion.SaveChanges();
@@ -82,7 +82,7 @@ namespace SAAcademiaMatriculas_Lib_Servicios.Implementaciones
             var audit = new Auditorias();
             audit.Nombre = "Eliminar Estudiante";
             audit.Fecha = DateTime.Now;
-            audit.Descripcion = $"Se eliminó al estudiante Id: {entidad.Id}";
+            audit.Descripcion = "Se eliminó al estudiante";
             this.iConexion.Auditorias!.Add(audit);
 
             this.iConexion.SaveChanges();
